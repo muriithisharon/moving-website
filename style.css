@@ -1,7 +1,7 @@
 .parent-container{
     display: flex;
     width: 100%;
-    border: 2px solid;
+    border: none;
     flex-direction: column;
 }
 .navbar{
@@ -33,14 +33,14 @@
 .left-side{
     flex: 1;
     text-align: left;
-    border: 1px solid;
+    border: none;
   }
   .right-side{
       flex: 1;
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 1px solid;
+      border: none;
   }
   .logoipsum{
     display: flex;
@@ -115,7 +115,7 @@
     display: inline-block;
   }
   .image-container{
-    background-color: rgb(89, 89, 230);
+    background-color: rgb(14, 87, 184);
     width: 250px;
   }
   .text-content{
@@ -544,6 +544,144 @@ color: #fff;
   .request-quote .send-request {
     grid-column: span 1; 
   }
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;
+  padding: 50px 0; 
+}
+
+.hero .container {
+  width: 50%;
+  padding: 20px;
+}
+
+.hero-content {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.hero-text {
+  width: 60%;
+  padding: 20px;
+}
+
+.hero-text .verified {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.hero-text .get-started {
+  background-color: #ffc107; 
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-image {
+  width: 40%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.help-section {
+  background-color: #4169E1;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.help-section p {
+  margin: 0;
+}
+
+.help-section .help-button {
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.reasons-section {
+  width: 45%;
+  padding: 20px;
+}
+
+.reasons-section .reasons-container {
+  padding: 20px;
+}
+
+.reasons-section h2 {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.reasons-section h3 {
+    font-size: 2rem;
+    color: black;
+}
+
+.reasons-section .description {
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.benefits {
+    margin-top: 20px;
+}
+
+.benefits .benefit {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.benefits .benefit i {
+  margin-right: 10px;
+  color: #ffc107;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero .container {
+        width: 100%;
+    }
+
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .hero-text, .hero-image {
+        width: 100%;
+    }
+
+    .reasons-section {
+        width: 100%;
+        margin-top: 30px;
+    }
 }
 
 
